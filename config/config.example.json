@@ -1,0 +1,50 @@
+{
+  "_comment": "复制成 config.json 再改。真实 config.json 不要提交（已在 .gitignore 里）。",
+  "dsh": {
+    "baseUrl": "http://127.0.0.1:3080",
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "reasoningEffort": "max"
+  },
+  "snowluma": {
+    "wsUrl": "ws://127.0.0.1:3001"
+  },
+  "agentPreset": "qq-chat-v2",
+  "workspaceTitle": "QQ 聊天",
+  "ownerQQ": "10001",
+  "allow": {
+    "private": ["10001"],
+    "groups": ["20001"]
+  },
+  "role": {
+    "maxInjectChars": 20000
+  },
+  "socialV2": {
+    "enabled": true,
+    "voice": {
+      "enabled": true,
+      "dir": "audio",
+      "maxSeconds": 300,
+      "maxPerMinute": 2,
+      "maxPerHour": 10
+    },
+    "tools": {
+      "sendVoice": true,
+      "getImages": true
+    },
+    "proactive": {
+      "enabled": true,
+      "checkIntervalMinMs": 1800000,
+      "checkIntervalMaxMs": 5400000,
+      "idleThresholdMs": 900000,
+      "probability": 0.3
+    },
+    "ownLife": {
+      "enabled": true,
+      "intervalMs": 3600000,
+      "maxPerDay": 10,
+      "quietFrom": 2,
+      "quietTo": 8
+    }
+  }
+}

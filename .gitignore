@@ -1,0 +1,30 @@
+# 密钥与本地数据 —— 一律不进仓库
+*.key
+*-key.txt
+mimo-key.txt
+minimax-key.txt
+config.json
+state/
+audio/
+photos/
+diary/
+memory/
+
+# 日志
+*.log
+
+# 别提交我的草稿
+_draft*
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+
+# 编辑器
+.vscode/
+.idea/
