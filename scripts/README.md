@@ -1,6 +1,6 @@
 # 脚本说明
 
-全部脚本按"**默认布局**"写死了一部分路径，改两个变量就能用在你自己的机器上。
+所有本机路径集中在 **`paths.cmd`**，改那一个文件就够。其它脚本开头都会 `call` 它。
 
 ## 默认布局
 
@@ -48,7 +48,7 @@ F:\MuMuPlayer\               MuMu 模拟器（可选）
 注册表 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`：
 
 ```
-DafeiyuBots     = "<repo>\scripts\start-bots.cmd"
+DshQqBot     = "<repo>\scripts\start-bots.cmd"
 DeepSeekHarness = "F:\DSH\DeepSeek Harness.exe"
 ```
 
